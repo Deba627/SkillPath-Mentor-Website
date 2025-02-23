@@ -13,6 +13,16 @@
     @apply bg-blue-700 shadow-md;
 }
 
+/* ✅ Mobile Responsive Navbar */
+@media (max-width: 768px) {
+    .navbar {
+        @apply flex-col items-center text-center;
+    }
+    .nav-item {
+        @apply w-full my-2;
+    }
+}
+
 /* ✅ Section Animations */
 .section {
     @apply opacity-0 transform translate-y-5 transition-all duration-700 ease-in-out;
@@ -79,43 +89,50 @@
     @apply bg-gradient-to-r from-blue-600 to-purple-700 text-white text-center p-5 mt-10 shadow-md;
 }
 
+/* 🔹 Floating Icons Animation */
+.floating-icons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    z-index: 1000;
+}
 
-    /* Floating icons animation */
+/* ✅ Mobile Responsive Floating Icons */
+@media (max-width: 768px) {
     .floating-icons {
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
-        z-index: 1000; /* Keep icons above everything */
+        bottom: 10px;
+        right: 10px;
     }
-    
-    .social-icon {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 60px;
-        height: 60px;
-        border-radius: 50%;
-        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
-        transition: transform 0.2s ease-in-out, box-shadow 0.3s;
-    }
-    
-    .social-icon:hover {
-        transform: scale(1.1);
-    }
-    
-    .whatsapp {
-        background-color: #25D366; /* WhatsApp Green */
-    }
+}
 
-    .instagram {
-        background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); /* Instagram gradient */
-    }
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease-in-out, box-shadow 0.3s;
+}
 
-    .social-icon svg {
-        width: 32px;
-        height: 32px;
-        fill: white;
-    }
+.social-icon:hover {
+    transform: scale(1.15);
+}
+
+.whatsapp {
+    background-color: #25D366;
+}
+
+.instagram {
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+}
+
+.social-icon svg {
+    width: 28px;
+    height: 28px;
+    fill: white;
+}
