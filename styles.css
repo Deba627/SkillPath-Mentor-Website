@@ -4,10 +4,10 @@
 
 /* 🌟 Navbar Styles */
 .navbar {
-    @apply bg-gradient-to-r from-blue-600 to-purple-600 text-white p-5 shadow-lg flex justify-between items-center;
+    @apply bg-gradient-to-r from-blue-600 to-purple-600 text-white p-5 shadow-lg flex flex-col md:flex-row justify-between items-center;
 }
 .nav-item {
-    @apply px-4 py-2 rounded-lg text-lg font-semibold transition-all duration-300;
+    @apply px-4 py-2 rounded-lg text-base sm:text-lg font-semibold transition-all duration-300;
 }
 .nav-item:hover {
     @apply bg-blue-700 shadow-md;
@@ -23,7 +23,7 @@
 
 /* 🎨 Cards - Hover & UI Effects */
 .custom-card {
-    @apply bg-white p-6 rounded-xl shadow-md transition duration-300 transform hover:scale-105 hover:shadow-2xl;
+    @apply bg-white p-4 sm:p-6 rounded-xl shadow-md transition duration-300 transform hover:scale-105 hover:shadow-2xl;
 }
 
 /* ✨ Floating Effect */
@@ -52,13 +52,13 @@
 
 /* 🚀 Buttons */
 .btn-primary {
-    @apply bg-indigo-600 text-white px-6 py-3 rounded-lg text-lg font-semibold transition-all duration-300 hover:bg-indigo-700 transform hover:scale-105;
+    @apply bg-indigo-600 text-white px-6 py-3 rounded-lg text-base sm:text-lg font-semibold transition-all duration-300 hover:bg-indigo-700 transform hover:scale-105;
 }
 .btn-success {
-    @apply bg-green-500 text-white px-6 py-3 rounded-lg text-lg font-semibold transition-all duration-300 hover:bg-green-600 transform hover:scale-105;
+    @apply bg-green-500 text-white px-6 py-3 rounded-lg text-base sm:text-lg font-semibold transition-all duration-300 hover:bg-green-600 transform hover:scale-105;
 }
 .btn-danger {
-    @apply bg-red-500 text-white px-6 py-3 rounded-lg text-lg font-semibold transition-all duration-300 hover:bg-red-600 transform hover:scale-105;
+    @apply bg-red-500 text-white px-6 py-3 rounded-lg text-base sm:text-lg font-semibold transition-all duration-300 hover:bg-red-600 transform hover:scale-105;
 }
 
 /* 🔄 Call-To-Action */
