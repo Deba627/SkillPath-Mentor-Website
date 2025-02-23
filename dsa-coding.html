@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSA Coding - SkillPath Mentor</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom Hover Effects */
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background-color: #7f56d9;
+            transition: background-color 0.3s ease;
+        }
+
+        .card-title:hover {
+            color: #7f56d9;
+            transition: color 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-purple-50">
+
+    <header class="bg-gradient-to-r from-teal-600 to-blue-700 shadow-lg py-4">
+        <div class="container mx-auto flex justify-between items-center px-6">
+            
+            <!-- Company Name with Special Hover Effect -->
+            <h1 class="text-3xl font-extrabold text-white tracking-wide transition-transform transform hover:scale-110 hover:text-yellow-300 hover:rotate-2">
+                SkillPath Mentor
+            </h1>
+    
+            <!-- Navigation Menu -->
+            <nav>
+                <ul class="flex space-x-6 text-lg font-medium">
+                    <li><a href="index.html" class="text-white hover:text-yellow-300 transition duration-300 border-b-2 border-transparent hover:border-yellow-400">Home</a></li>
+                    <li><a href="career-roadmap.html" class="text-white hover:text-green-300 transition duration-300 border-b-2 border-transparent hover:border-green-400">Career Roadmap</a></li>
+                    <li><a href="dsa-coding.html" class="text-white hover:text-blue-300 transition duration-300 border-b-2 border-transparent hover:border-blue-400">DSA Coding</a></li>
+                    <li><a href="free-resources.html" class="text-white hover:text-purple-300 transition duration-300 border-b-2 border-transparent hover:border-purple-400">Free Resources</a></li>
+                    <li><a href="internships.html" class="text-white hover:text-pink-300 transition duration-300 border-b-2 border-transparent hover:border-pink-400">Internships</a></li>
+                    <li><a href="progress-tracker.html" class="text-white hover:text-orange-300 transition duration-300 border-b-2 border-transparent hover:border-orange-400">Progress Tracker</a></li>
+                    <li><a href="projects.html" class="text-white hover:text-red-300 transition duration-300 border-b-2 border-transparent hover:border-red-400">Projects</a></li>
+                    <li><a href="resume-assistance.html" class="text-white hover:text-cyan-300 transition duration-300 border-b-2 border-transparent hover:border-cyan-400">Resume Assistance</a></li>
+                </ul>
+            </nav>
+    
+            <!-- Register & Login Buttons -->
+            <div class="flex space-x-4">
+                <a href="register.html" class="bg-yellow-400 text-gray-900 px-4 py-2 rounded-lg font-semibold shadow-md hover:bg-yellow-500 transition duration-300">Register</a>
+                <a href="login.html" class="bg-green-400 text-white px-4 py-2 rounded-lg font-semibold shadow-md hover:bg-green-500 transition duration-300">Login</a>
+            </div>
+        </div>
+    </header>
+    
+
+    <!-- Hero Section -->
+    <section class="container mx-auto my-10 text-center px-6">
+        <h2 class="text-4xl font-bold text-purple-800">Master DSA Coding</h2>
+        <p class="mt-4 text-lg text-gray-700">Data Structures and Algorithms (DSA) are crucial for cracking coding interviews and becoming an efficient problem solver. Learn, practice, and master DSA concepts with structured guidance.</p>
+        <p class="mt-4 text-lg text-gray-700">Our curriculum is designed to help you understand core concepts, improve problem-solving skills, and build a strong foundation for your technical interviews and future projects. Whether you're just starting or need to enhance your skills, we’ve got you covered.</p>
+    </section>
+
+    <!-- Learning Modules Section -->
+    <section class="container mx-auto my-10 px-6">
+        <h3 class="text-3xl font-semibold text-purple-800 text-center mb-6">What You Will Learn</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="card p-6 bg-white shadow-lg rounded-lg hover:shadow-2xl transition-all">
+                <h4 class="text-xl font-bold text-purple-700 card-title">Arrays & Strings</h4>
+                <p class="text-gray-600 mt-2">Learn fundamental data structures like arrays and strings, essential for storing and manipulating data. Understand techniques such as sliding windows, two-pointer approach, and string manipulation methods.</p>
+            </div>
+            <div class="card p-6 bg-white shadow-lg rounded-lg hover:shadow-2xl transition-all">
+                <h4 class="text-xl font-bold text-purple-700 card-title">Linked Lists & Stacks</h4>
+                <p class="text-gray-600 mt-2">Master linked lists and stacks to handle dynamic data efficiently. Learn how to perform operations like insertion, deletion, and traversal with real-life applications such as undo/redo functionality in apps.</p>
+            </div>
+            <div class="card p-6 bg-white shadow-lg rounded-lg hover:shadow-2xl transition-all">
+                <h4 class="text-xl font-bold text-purple-700 card-title">Trees & Graphs</h4>
+                <p class="text-gray-600 mt-2">Understand tree traversal methods (preorder, inorder, postorder) and graph algorithms (DFS, BFS). Learn how these concepts apply to databases, file systems, and social network algorithms.</p>
+            </div>
+            <div class="card p-6 bg-white shadow-lg rounded-lg hover:shadow-2xl transition-all">
+                <h4 class="text-xl font-bold text-purple-700 card-title">Sorting & Searching</h4>
+                <p class="text-gray-600 mt-2">Learn sorting algorithms like QuickSort, MergeSort, and understand searching techniques such as Binary Search. These are the backbone of efficient data processing and retrieval in large datasets.</p>
+            </div>
+            <div class="card p-6 bg-white shadow-lg rounded-lg hover:shadow-2xl transition-all">
+                <h4 class="text-xl font-bold text-purple-700 card-title">Dynamic Programming</h4>
+                <p class="text-gray-600 mt-2">Solve complex problems with dynamic programming techniques. Learn how to break problems into subproblems and optimize recursive solutions for better performance.</p>
+            </div>
+            <div class="card p-6 bg-white shadow-lg rounded-lg hover:shadow-2xl transition-all">
+                <h4 class="text-xl font-bold text-purple-700 card-title">Greedy Algorithms</h4>
+                <p class="text-gray-600 mt-2">Learn how greedy algorithms can simplify problem-solving by choosing the best option at each step. Apply this to problems like job scheduling, activity selection, and coin change problems.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Start Your DSA Journey -->
+    <section class="container mx-auto my-10 px-6 text-center">
+        <h3 class="text-3xl font-semibold text-purple-800">Start Your DSA Journey</h3>
+        <p class="mt-4 text-lg text-gray-700">Follow our structured roadmap, solve problems, and become an expert in DSA. With our hands-on approach and a strong focus on practice, you’ll build the confidence and skills you need for coding interviews and real-world applications.</p>
+        <a href="premium.html" class="mt-6 inline-block bg-purple-700 text-white px-6 py-3 rounded text-lg btn-primary">Get Premium Access</a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-6 mt-10 text-center">
+        <p class="text-lg">&copy; 2025 SkillPath Mentor. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 🌟 Navbar Styles */
+.navbar {
+    @apply bg-gradient-to-r from-blue-600 to-purple-600 text-white p-5 shadow-lg flex justify-between items-center;
+}
+.nav-item {
+    @apply px-4 py-2 rounded-lg text-lg font-semibold transition-all duration-300;
+}
+.nav-item:hover {
+    @apply bg-blue-700 shadow-md;
+}
+
+/* ✅ Section Animations */
+.section {
+    @apply opacity-0 transform translate-y-5 transition-all duration-700 ease-in-out;
+}
+.section-visible {
+    @apply opacity-100 translate-y-0;
+}
+
+/* 🎨 Cards - Hover & UI Effects */
+.custom-card {
+    @apply bg-white p-6 rounded-xl shadow-md transition duration-300 transform hover:scale-105 hover:shadow-2xl;
+}
+
+/* ✨ Floating Effect */
+.float-card {
+    @apply transition-all duration-300 transform hover:-translate-y-2 hover:shadow-lg;
+}
+
+/* 🔥 Premium Glow Effect */
+.premium-glow {
+    position: relative;
+    border: 2px solid transparent;
+    background-clip: padding-box;
+}
+.premium-glow::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg, #FACC15, #9333EA);
+    z-index: -1;
+    border-radius: inherit;
+    filter: blur(5px);
+}
+
+/* 🚀 Buttons */
+.btn-primary {
+    @apply bg-indigo-600 text-white px-6 py-3 rounded-lg text-lg font-semibold transition-all duration-300 hover:bg-indigo-700 transform hover:scale-105;
+}
+.btn-success {
+    @apply bg-green-500 text-white px-6 py-3 rounded-lg text-lg font-semibold transition-all duration-300 hover:bg-green-600 transform hover:scale-105;
+}
+.btn-danger {
+    @apply bg-red-500 text-white px-6 py-3 rounded-lg text-lg font-semibold transition-all duration-300 hover:bg-red-600 transform hover:scale-105;
+}
+
+/* 🔄 Call-To-Action */
+.cta-section {
+    @apply bg-gradient-to-r from-indigo-500 to-purple-700 text-white text-center py-12 px-6 shadow-lg rounded-lg;
+}
+.cta-text {
+    @apply text-2xl font-bold;
+}
+
+/* 🎭 Input Fields */
+.input-field {
+    @apply w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all;
+}
+
+/* 📌 Footer */
+.footer {
+    @apply bg-gradient-to-r from-blue-600 to-purple-700 text-white text-center p-5 mt-10 shadow-md;
+}

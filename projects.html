@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects & Portfolio Building</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-900">
+    
+    <!-- Navbar -->
+    <header class="bg-gradient-to-r from-teal-600 to-blue-700 shadow-lg py-4">
+        <div class="container mx-auto flex justify-between items-center px-6">
+            
+            <!-- Company Name with Special Hover Effect -->
+            <h1 class="text-3xl font-extrabold text-white tracking-wide transition-transform transform hover:scale-110 hover:text-yellow-300 hover:rotate-2">
+                SkillPath Mentor
+            </h1>
+    
+            <!-- Navigation Menu -->
+            <nav>
+                <ul class="flex space-x-6 text-lg font-medium">
+                    <li><a href="index.html" class="text-white hover:text-yellow-300 transition duration-300 border-b-2 border-transparent hover:border-yellow-400">Home</a></li>
+                    <li><a href="career-roadmap.html" class="text-white hover:text-green-300 transition duration-300 border-b-2 border-transparent hover:border-green-400">Career Roadmap</a></li>
+                    <li><a href="dsa-coding.html" class="text-white hover:text-blue-300 transition duration-300 border-b-2 border-transparent hover:border-blue-400">DSA Coding</a></li>
+                    <li><a href="free-resources.html" class="text-white hover:text-purple-300 transition duration-300 border-b-2 border-transparent hover:border-purple-400">Free Resources</a></li>
+                    <li><a href="internships.html" class="text-white hover:text-pink-300 transition duration-300 border-b-2 border-transparent hover:border-pink-400">Internships</a></li>
+                    <li><a href="progress-tracker.html" class="text-white hover:text-orange-300 transition duration-300 border-b-2 border-transparent hover:border-orange-400">Progress Tracker</a></li>
+                    <li><a href="projects.html" class="text-white hover:text-red-300 transition duration-300 border-b-2 border-transparent hover:border-red-400">Projects</a></li>
+                    <li><a href="resume-assistance.html" class="text-white hover:text-cyan-300 transition duration-300 border-b-2 border-transparent hover:border-cyan-400">Resume Assistance</a></li>
+                </ul>
+            </nav>
+    
+            <!-- Register & Login Buttons -->
+            
+    </header>
+    
+    
+    <!-- Header -->
+    <header class="text-center py-10 bg-gradient-to-r from-indigo-500 to-purple-600 text-white shadow-lg">
+        <h1 class="text-3xl font-bold">Projects & Portfolio Building</h1>
+    </header>
+    
+    <!-- Content -->
+    <section class="max-w-7xl mx-auto my-8 p-8 bg-white shadow-lg rounded-lg">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <script>
+                const projects = [
+                    { title: "Portfolio Website", description: "Showcase your skills & projects." },
+                    { title: "E-commerce Website", description: "Develop a shopping website with cart & checkout." },
+                    { title: "To-Do List App", description: "Create a CRUD application for task management." },
+                    { title: "Job Portal", description: "A platform where users can post & apply for jobs." },
+                    { title: "Spam Email Detector", description: "Classify emails as spam or not using AI." },
+                    { title: "Chat Application", description: "Develop a messaging app with real-time chat." },
+                    { title: "Expense Tracker App", description: "Track and manage expenses with analytics." },
+                    { title: "Blogging Platform", description: "Create a CMS-based blogging site." },
+                    { title: "Movie Recommendation System", description: "AI-based recommendation system for movies." },
+                    { title: "Cybersecurity Dashboard", description: "Monitor and detect security threats." },
+                    { title: "Weather App", description: "Fetch and display live weather data." },
+                    { title: "Stock Market Prediction", description: "Predict stock prices using ML." },
+                    { title: "Fitness Tracker", description: "Monitor workouts and calories." },
+                    { title: "AI Chatbot", description: "Develop an AI-based chatbot." },
+                    { title: "Password Manager", description: "Store and encrypt passwords securely." },
+                    { title: "AI-Based Resume Screener", description: "Automate resume screening with AI." },
+                    { title: "Music Streaming App", description: "Develop a music player with personalized playlists." },
+                    { title: "Online Learning Platform", description: "Create an e-learning portal with courses." },
+                    { title: "Quiz App", description: "Develop an interactive quiz application." },
+                    { title: "Hospital Management System", description: "Manage hospital records efficiently." }
+                ];
+                
+                document.write(
+                    projects.map((project, index) => `
+                        <div class="bg-${['blue', 'green', 'yellow', 'purple', 'red'][index % 5]}-300 text-center p-6 rounded-lg shadow-md hover:scale-105 transition hover:bg-opacity-75">
+                            <h2 class="text-xl font-semibold">${project.title}</h2>
+                            <p class="mt-2 text-sm">${project.description}</p>
+                        </div>
+                    `).join('')
+                );
+            </script>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bg-gradient-to-r from-blue-500 to-indigo-600 text-white text-center p-4 mt-10 shadow-lg">
+        <p>&copy; 2025 SkillPath Mentor. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
